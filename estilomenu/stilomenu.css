@@ -1,0 +1,81 @@
+.menu{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu img{
+    height: 80px;
+    width: 80px;
+}
+.menu li a.active, .menu li a:hover{
+    background: #fdfdfd;
+    transition: .3s;
+}
+.checkbtn{/*estilo del icono responsive*/
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*variacion de acuerdo al tamaño de pantallas*/
+@media (max-width: 952px){
+    
+    .menu ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+   .menu ul{
+        position: fixed;
+        width: 80%;
+        height: 90vh;
+        background: #55400d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menu nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background:none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}

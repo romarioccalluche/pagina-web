@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .pollitos h1{
+            color: rgb(37, 20, 84);
+            font-size: 30px;
+        }
+        .pollitos img{
+            width: 200px;/*tamaño de img*/
+            height: 200px;/*tamaño de img*/
+            border-radius: 10px;/*hacer que la imagen las esquinas sean redondas*/
+            margin-left: 20px;/*distancia de margen izquierdo*/
+            margin-top: 20px;/*distancia de margen superior*/
+            border-style: solid;/*poner estilo solido al borde*/
+            border-color: rgb(192, 237, 43); /*poner el color al borde */
+            flex-wrap: wrap;
+            
+            
+        }
+        /*@media screen and (min-width: 1024px){
+            .pollitos img{
+                display: flex;
+                margin-top: 20px;
+            }
+            .pollitos h1{
+                font-size: 40px;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+
+        }*/
+        @media  (max-width: 900px){
+            .pollitos h1{
+                font-size: 20px;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+           .pollitos img{
+            width: 150px;/*tamaño de img*/
+            height: 152px;/*tamaño de img*/
+            border-radius: 10px;/*hacer que la imagen las esquinas sean redondas*/
+            margin-left: 20px;/*distancia de margen izquierdo*/
+            margin-top: 20px;/*distancia de margen superior*/
+            border-style: solid;/*poner estilo solido al borde*/
+            border-color: rgb(192, 237, 43); /*poner el color al borde */
+            flex-wrap: wrap;
+            
+
+        }
+    }
+            
+        
+            
+        
+    </style>
+    <section class="pollitos">
+        <h1>EN NUESTRAS CARTAS:</h1>
+
+
+        <img src="../imgcartasgalery/pollo1.png" alt="">
+        <img src="../imgcartasgalery/pollo2.png" alt="">
+        <img src="../imgcartasgalery/pollo3.png" alt="">
+
+
+
+
+    </section>
+</body>
+</html>

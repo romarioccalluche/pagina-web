@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    
+    margin-bottom: 10px;
+    
+}
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 250px;
+  }
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 10px solid red;
+    border-bottom: 20px solid blue;
+    border-left: 10px solid brown;
+    border-right: 10px solid white;
+    background-color: aqua;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: justify;
+}
+
+@media (max-width:1024px){
+    section{
+        display: block;
+    }
+    img{
+        width: 70%;
+        height: 250px;
+    }
+    p{
+        
+        text-align: justify;
+    }
+    
+}

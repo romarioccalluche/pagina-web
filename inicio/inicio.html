@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        h5{
+            margin: 9px;
+        }
+        p{
+            margin: 16px;
+            display: inline block;
+            float: right;
+            margin-top: 20px;
+
+        }
+        section img{
+            width: 300px;
+            height: 500px;
+            display: block; 
+            margin: 5px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function(){
+       
+        $('#no').click(function(){
+        $('#contenido').load("../inicio/nosotros.html");});
+
+        //galeria
+        $('#ga').click(function(){
+        $('#contenido').load("../inicio/galeria.html");});
+
+       
+    });
+        </script>
+
+
+    <h5=>BIENVENIDOS A NUSTRA PAGIA WEB DE "RICO PICO DORADO"</h5>
+    
+    <section>
+        <p>Esta es una pagina web diseñada para ti, amigos y familiares. En ella encontraras una variedad de platos y servicios que te haran disfrutar de unas comidas exquisitas y deliciosas. Te invitamos a visitar nuestras cartas y comer en PICO DORADO. Esperamos verte pronto!</p>
+        <img src="../imagenes/iniciohtml.jpeg" alt="">
+    </section>
+    
+
+    <p>PASE A VISITAR NUESTRA GALERIA <a href="#" id="ga" >GALERIA</a></p>
+    <p>TAMBIEN PASE A VISITAR DE QUIENES SOMOS! <a href="#" id="no">NOSOTROS</a></p>
+
+    
+</body>
+</html>  
